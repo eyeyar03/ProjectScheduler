@@ -1,0 +1,25 @@
+<ng-container *ngIf="project">
+	<h1>{{project.name}} Schedule</h1>
+	<table class="table table-bordered">
+		<thead class="thead-light">
+			<th>Plan Name</th>
+			<th>Task</th>
+			<th>Duration</th>
+			<th>Start Date</th>
+			<th>End Date</th>
+			<th>Depends On</th>
+		</thead>
+		<tbody>
+			<ng-container *ngFor="let plan of project.plans">
+				<tr *ngFor="let task of plan.tasks; let first = first">
+					<td *ngIf="first" attr.rowspan="{{ plan.tasks.length }}" >{{ plan.name }}</td>
+					<td> {{ task.name }}</td>
+					<td> {{ task.duration }}</td>
+					<td> {{ task.startDate | date }}</td>
+					<td> {{ task.endDate | date }}</td>
+					<td> {{ task.dependsOn }}</td>
+				</tr>
+			</ng-container>
+		</tbody>
+	</table>
+</ng-container>
