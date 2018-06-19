@@ -22,7 +22,7 @@ The solution to the problem take advantage the features of **SpringBoot**. *Web*
 2. SSH Key - The project can be cloned using SSH. And an SSH key is needed to clone it.
 - In git bash, execute *ssh-keygen -t rsa -b 4096 -C "<your.email@address.com>"* to generate SSH key.
 - Copy the SSH key by executing *clip < ~/.ssh/id_rsa.pub"*
-- Paste the SSH key in text file and set it to aaron.macandili.public@gmail.com so I can include it my GitHub.
+- Paste the SSH key in text file and send it to aaron.macandili.public@gmail.com so I can include it my GitHub.
 3. Clone the project.
 
 ### Backend
