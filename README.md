@@ -12,14 +12,25 @@ The solution to the problem take advantage the features of **SpringBoot**. *Web*
 [Angular](https://angular.io/) was used to create the UI for the said web app.
 
 ## Setting Up
-Clone the project.
+1. Ensure that the following are installed:
+- JDK8
+- Eclipse
+- git
+- nodejs
+- Gradle
+- Angular CLI (after installation of nodejs, run the following command in cmd prompt, *npm install -g @angular/cli*.
+2. SSH Key - The project can be cloned using SSH. And an SSH key is needed to clone it.
+- In git bash, execute *ssh-keygen -t rsa -b 4096 -C "<your.email@address.com>"* to generate SSH key.
+- Copy the SSH key by executing *clip < ~/.ssh/id_rsa.pub"*
+- Paste the SSH key in text file and set it to aaron.macandili.public@gmail.com so I can include it my GitHub.
+3. Clone the project.
 
 ### Backend
-1. In root directory, run *gradlew eclipse*. This will download all dependencies.
+1. Using git bash, go to root directory and run *./gradlew eclipse*. This will download all dependencies.
 2. After installing, open your favorite IDE (i.e. Eclipse) and run as java application the *ProjectPlansSchedulerApplication.java* file.
 
 ### Frontend
-1. Go to <root-dir>/web/scheduler-web and run *npm install*. This will download all npm packages including Angular.
+1. Using git bash, go to <root-dir>/web/scheduler-web and run *npm install*. This will download all npm packages including Angular.
 2. After installation, on the same path, run *ng serve -o*. This will open a page in a browser. This will serve as our UI for our backend.
 
 ## Using and Testing the Application
